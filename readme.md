@@ -1,9 +1,9 @@
-#change current directory project
+##change current directory project
 ```
 cd localme-backend
 ```
 
-#create and run
+##create and run
 ```
 docker-compose up -d
 ```
