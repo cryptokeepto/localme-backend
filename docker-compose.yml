@@ -11,4 +11,4 @@ services:
       - ./www/localme.io/:/usr/share/nginx/html/
       - ./etc/letsencrypt/live/localme.io/fullchain.pem:/etc/letsencrypt/live/localme.io/fullchain.pem
       - ./etc/letsencrypt/live/localme.io/privkey.pem:/etc/letsencrypt/live/localme.io/privkey.pem
-      - ./etc/letsencrypt/dh-param/dhparam-2048.pem:/etc/letsencrypt/dh-param/dhparam-2048.pem
+      - ./etc/letsencrypt/dh-param/dhparam-2048.pem:/etc/ssl/certs/dhparam-2048.pem
