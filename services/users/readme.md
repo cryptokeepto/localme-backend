@@ -1,2 +1,0 @@
-## Users service
--   nodejs@8.10.0
