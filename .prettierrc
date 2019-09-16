@@ -1,0 +1,24 @@
+{
+  "printWidth": 80,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "bracketSpacing": false,
+  "semi": false,
+  "useTabs": false,
+  "parser": "babel",
+  "jsxBracketSameLine": true,
+  "overrides": [
+    {
+      "files": "*.ts",
+      "options": {
+        "parser": "typescript"
+      }
+    },
+    {
+      "files": "*.tsx",
+      "options": {
+        "parser": "typescript"
+      }
+    }
+  ]
+}
