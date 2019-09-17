@@ -30,4 +30,19 @@ describe("captcha", () => {
     const captcha: Captcha = new Captcha(1, 1, 1, 9)
     expect(captcha.getRight()).toBe("Nine")
   })
+
+  it("operator should be plus", () => {
+    const captcha: Captcha = new Captcha(1, 1, 1, 1)
+    expect(captcha.getOperator()).toBe("+")
+  })
+
+  it("operator should be minus", () => {
+    const captcha: Captcha = new Captcha(1, 1, 2, 1)
+    expect(captcha.getOperator()).toBe("-")
+  })
+
+  it("operator should be multiply", () => {
+    const captcha: Captcha = new Captcha(1, 1, 3, 1)
+    expect(captcha.getOperator()).toBe("*")
+  })
 })
