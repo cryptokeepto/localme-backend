@@ -45,4 +45,19 @@ describe("captcha", () => {
     const captcha: Captcha = new Captcha(1, 1, 3, 1)
     expect(captcha.getOperator()).toBe("*")
   })
+
+  it("second pattern left operand should be one", () => {
+    const captcha: Captcha = new Captcha(2, 1, 1, 1)
+    expect(captcha.getLeft()).toBe("One")
+  })
+
+  it("second pattern left operand should be five", () => {
+    const captcha: Captcha = new Captcha(2, 5, 1, 1)
+    expect(captcha.getLeft()).toBe("Five")
+  })
+
+  it("second pattern left operand should be nine", () => {
+    const captcha: Captcha = new Captcha(2, 9, 1, 1)
+    expect(captcha.getLeft()).toBe("Nine")
+  })
 })
